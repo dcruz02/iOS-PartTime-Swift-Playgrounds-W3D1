@@ -19,7 +19,8 @@ var thirdElement = fruits[2]
 //: ### Challenge 1
 //:
 //: Get the second element in fruits. ie) "Apple"
-
+var secondElement = fruits[2]
+print(secondElement)
 
 
 
@@ -33,7 +34,7 @@ fruits.append("Tomato")
 //: ### Challenge 2
 //:
 //: Insert your favourite fruit at the start of the array. (We haven't covered this so do a quick google search)
-
+fruits.insert("blueberry", at: 0)
 
 
 
@@ -49,7 +50,12 @@ var arrayOfBools = [Bool]()
 //:
 //: Create an empty array for storing `Int`s, call it `numbers`.
 //: Add the numbers 10, 20, 60, 30, 40 to the array.
-
+var numbers = [Int]()
+numbers.append(10)
+numbers.append(20)
+numbers.append(60)
+numbers.append(30)
+numbers.append(40)
 
 
 
@@ -71,9 +77,15 @@ for fruit in fruits {
 
 //: ## Bonus Challenge
 //: Write a function that takes in an array of numbers and prints each number in that array
+func printArrayOfNumbers(){
+    
+    for number in numbers {
+        
+        print(number)
+    }
+}
 
-
-
+printArrayOfNumbers()
 
 
 
